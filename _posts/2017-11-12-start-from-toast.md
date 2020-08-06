@@ -4,6 +4,7 @@ title: Android 源码分析 —— 从 Toast 出发
 categories: Android
 description: Android 源码分析，深入解析 Toast。
 keywords: RTFSC, Android, Toast
+topmost: true
 ---
 
 本系列文章在 <https://github.com/mzlogin/rtfsc-android> 持续更新中，欢迎有兴趣的童鞋们关注。
@@ -22,20 +23,20 @@ Toast 是 Android 开发里较常用的一个类了，有时候用它给用户�
 
 <!-- vim-markdown-toc GFM -->
 
-* [Toast 印象](#toast-印象)
-* [提出问题](#提出问题)
-* [解答问题](#解答问题)
-    * [Toast 的超时时间](#toast-的超时时间)
-    * [能不能弹一个时间超长的 Toast？](#能不能弹一个时间超长的-toast)
-    * [Toast 能不能在非 UI 线程调用？](#toast-能不能在非-ui-线程调用)
-    * [应用在后台时能不能 Toast？](#应用在后台时能不能-toast)
-    * [Toast 数量有没有限制？](#toast-数量有没有限制)
-    * [`Toast.makeText(…).show()` 具体都做了些什么？](#toastmaketextshow-具体都做了些什么)
-* [总结](#总结)
-    * [补充后的 Toast 知识点列表](#补充后的-toast-知识点列表)
-    * [遗留知识点](#遗留知识点)
-    * [本篇用到的源码分析方法](#本篇用到的源码分析方法)
-* [后话](#后话)
+- [Toast 印象](#toast-印象)
+- [提出问题](#提出问题)
+- [解答问题](#解答问题)
+  - [Toast 的超时时间](#toast-的超时时间)
+  - [能不能弹一个时间超长的 Toast？](#能不能弹一个时间超长的-toast)
+  - [Toast 能不能在非 UI 线程调用？](#toast-能不能在非-ui-线程调用)
+  - [应用在后台时能不能 Toast？](#应用在后台时能不能-toast)
+  - [Toast 数量有没有限制？](#toast-数量有没有限制)
+  - [`Toast.makeText(…).show()` 具体都做了些什么？](#toastmaketextshow-具体都做了些什么)
+- [总结](#总结)
+  - [补充后的 Toast 知识点列表](#补充后的-toast-知识点列表)
+  - [遗留知识点](#遗留知识点)
+  - [本篇用到的源码分析方法](#本篇用到的源码分析方法)
+- [后话](#后话)
 
 <!-- vim-markdown-toc -->
 
