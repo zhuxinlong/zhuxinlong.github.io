@@ -23,7 +23,7 @@ permalink: /about/
 {% if site.url contains 'zhuxinlong' %}
 <li>
 微信：<br />
-<img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ assets_base_url }}/assets/images/qrcode.jpg" alt="程序员" />
+<img style="height:192px;width:192px;border:1px solid lightgrey;" src="{{ assets_base_url }}/assets/images/xqrcode.jpg" alt="程序员" />
 </li>
 {% endif %}
 </ul>
