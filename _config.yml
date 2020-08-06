@@ -128,7 +128,7 @@ comments_provider: gitalk
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: zhuxinlong
-    repo: blog-comments
+    repo: zhuxinlong.github.io
     clientID: 26cb049d4b18a9509264
     clientSecret: 1544f7e8627cbd43f5de8c0a2c7a76ce943c6315
 # 在使用其它评论组件时可点击显示 Disqus
