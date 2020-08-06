@@ -1,7 +1,7 @@
 ---
 layout: post
-title: kafka 日志版本变迁
-categories: GitHub
+title: kafka 日志格式变迁
+categories: kafka
 description: 使用这个博客模板的朋友们时不时会提出一些问题，我将它们的解决方案逐渐整理归纳，汇总到这一篇帖子里。
 keywords: kafka
 topmost: true
