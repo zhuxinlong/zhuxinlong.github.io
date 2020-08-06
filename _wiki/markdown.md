@@ -128,10 +128,10 @@ print 'Hello, World!'
 ### 图片
 
 ```
-![本站favicon](/favicon.ico)
+![本站favicon](/xfavicon.ico)
 ```
 
-![本站favicon](/favicon.ico)
+![本站favicon](/xfavicon.ico)
 
 ### 锚点
 
@@ -150,14 +150,14 @@ Block Inline Attribute 详情参考 <https://kramdown.gettalong.org/syntax.html#
 给块/元素添加 class、id、内嵌样式等：
 
 ```
-![本站favicon](/favicon.ico){:.center}
+![本站favicon](/xfavicon.ico){:.center}
 
 Hello, *world*{:#world} 
 
 Hello, *world*{: style="color:red"} 
 ```
 
-![本站favicon](/favicon.ico){:.center}
+![本站favicon](/xfavicon.ico){:.center}
 
 Hello, *world*{:#world} 
 
