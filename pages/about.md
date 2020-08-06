@@ -1,8 +1,8 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 不积跬步无以至千里
+keywords: Xinlong Zhu,
 comments: true
 menu: 关于
 permalink: /about/
