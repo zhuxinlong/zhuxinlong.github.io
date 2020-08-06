@@ -155,3 +155,8 @@ google:
         content_footer: false
 
 theme: jekyll-theme-cayman
+
+# ---------------- #
+#      draw        #
+# ---------------- #
+mermaid: true
