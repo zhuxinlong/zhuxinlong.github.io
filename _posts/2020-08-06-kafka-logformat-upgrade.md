@@ -6,8 +6,8 @@ description: 使用这个博客模板的朋友们时不时会提出一些问题�
 keywords: kafka
 topmost: true
 ---
-##
-kafka 至今共经历了三个版本变化
+
+## kafka 至今共经历了三个版本变化
 
 1. v0 (0.10.0以前)
 2. v1 (0.10.0~0.11.0) 增加了 Timestamp和lz4压缩类型
