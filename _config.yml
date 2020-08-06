@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://zhuxinlong.github.io/
 date_format: "ordinal"
-title: 码志
-subtitle: ""
+title: 个人博客
+subtitle: "千里之行，始于足下"
 description: "个人博客"
-keywords: 码志, Xinlong Zhu
+keywords: 个人博客, Xinlong Zhu
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
