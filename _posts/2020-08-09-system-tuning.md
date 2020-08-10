@@ -4,7 +4,6 @@ title: 性能优化记录
 categories: system
 description: 
 keywords: linux,tcp/ip,system tuning
-topmost: true
 ---
 
 ## 基础设施优化

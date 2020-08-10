@@ -4,7 +4,6 @@ title: 分布式事务
 categories: system
 description: 
 keywords: distributed-transaction
-topmost: true
 ---
 
 ### 资料分享
