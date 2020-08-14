@@ -14,6 +14,14 @@
   name: 个人博客
   url: https://zhuxinlong.github.io
 
+- sitename: 邮箱
+  name:  个人邮箱1
+  url: 2429465697@qq.com
+  
+- sitename: 邮箱
+  name:  个人邮箱2
+  url: 2017282110567@whu.edu.cn
+
 # - sitename: 微博
 #   name: mzlogin
 #   url: http://weibo.com/mzlogin

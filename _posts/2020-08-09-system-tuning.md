@@ -11,6 +11,7 @@ keywords: linux,tcp/ip,system tuning
 >cpu多级缓存
 ![cpu cache](/images/posts/system/cpu-cache.jpg) 
 * 提升数据缓存的命中率
+    
 * 提升指令缓存的命中率
 * 提升多核 CPU 下的缓存命中率
 
