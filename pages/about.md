@@ -18,7 +18,7 @@ permalink: /about/
 
 <ul>
 {% for website in site.data.social %}
-<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">@{{ website.name }}</a></li>
+<li>{{website.sitename }}：<a href="{{ website.url }}" target="_blank">{{ website.name }}</a></li>
 {% endfor %}
 {% if site.url contains 'zhuxinlong' %}
 <li>
