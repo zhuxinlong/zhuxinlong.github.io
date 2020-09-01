@@ -5,7 +5,9 @@ categories: system
 description: 
 keywords: linux,tcp/ip,system tuning
 ---
+
 本文主要介绍性能优化需关注的点
+
 ## 基础设施优化
 ### cpu多级缓存
 ![cpu cache](/images/posts/system/cpu-cache.jpg) 
