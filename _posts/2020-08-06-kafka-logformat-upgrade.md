@@ -1,11 +1,34 @@
 ---
 layout: post
-title: kafka 日志格式变迁
+title: kafka 升级
 categories: kafka
-description:  kafka 日志格式变迁
+description:  kafka 升级步骤
 keywords: kafka
 # topmost: true
 ---
+
+## kafka 升级步骤
+1. 去线上机器kafka根目录下查询版本,得知旧版本号为 1.0.1
+    ```shell
+    $ find ./libs/ -name \*kafka_\* | head -1 | grep -o '\kafka[^\n]*'
+    kafka_2.11-1.0.1-javadoc.jar
+    ```
+2. 在server.property中增加配置项，使用新版本（2.3.0）二进制文件在新机器上以此配置启动kafka broker进程
+   ```shell
+    inter.broker.protocol.version= 1.0.1
+    log.message.format.version= 1.0.1
+   ```
+  
+3. 将部分topic 迁移到新机器上 ，观察其影响一周。
+4. 如果第3步 kafka新版本无异常表现良好，则将所有topic迁移到新机器上，停掉所有老机器上的broker
+5. 修改server.property中的配置项,逐台以此配置重启所有broker
+   ```
+    inter.broker.protocol.version= 2.3.0
+    log.message.format.version= 2.3.0
+   ```  
+
+##  kafka 新特性 static membership
+> kafka 旧版本的成员关系可以理解为动态成员关系，新的静态成员关系本质是为了减少消费者组重平衡，待补充。
 
 ## kafka 至今共经历了三个版本变化
 
@@ -101,4 +124,5 @@ Value: byte[]
 ## 参考资料 
 1. [messageformat](https://kafka.apache.org/documentation/#messageformat)
 2. [A Guide To The Kafka Protocol](https://cwiki.apache.org/confluence/display/KAFKA/A+Guide+To+The+Kafka+Protocol#AGuideToTheKafkaProtocol-Messagesets)
-3. [从老版本升级kafka](https://www.orchome.com/505)
+3. [kakfa静态成员关系](https://cwiki.apache.org/confluence/display/KAFKA/KIP-345%3A+Introduce+static+membership+protocol+to+reduce+consumer+rebalances)
+4. [从老版本升级kafka](https://www.orchome.com/505)
