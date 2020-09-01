@@ -30,6 +30,16 @@ keywords: kafka
 ##  kafka 新特性 static membership
 > kafka 旧版本的成员关系可以理解为动态成员关系，新的静态成员关系本质是为了减少消费者组重平衡，待补充。
 
+## kafka manager监控指标解释
+1. Brokers Skewed%: Percentage of brokers having more partitions than the average 
+    如果代理的分区数大于给定主题上每个代理的平均分区数，则代理就会发生倾斜。
+    eg . 2 brokers、4 partitions , 如果有个分区为 3>  4 / 2,则 broker 就发生了倾斜  
+2. Broker Spread% : Percentage of cluster brokers having partitions from the topic
+    brokers spread  是集群中具有给定主题分区的代理的百分比。
+    eg . 3个brokers共享2个partitions,因此存在66%的brokers有这个主题的分区
+3. Under Replicated %: Percentage of partitions having a missing replica   不同步副本百分比
+4. Brokers Leader Skew %: Percentage of brokers having more partitions as leader than the average
+
 ## kafka 至今共经历了三个版本变化
 
 1. v0 (0.10.0以前)
