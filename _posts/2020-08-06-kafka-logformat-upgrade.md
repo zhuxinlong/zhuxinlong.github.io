@@ -8,6 +8,7 @@ keywords: kafka
 ---
 
 ## kafka 升级步骤
+### 操作序列
 1. 去线上机器kafka根目录下查询版本,得知旧版本号为 1.0.1
     ```shell
     $ find ./libs/ -name \*kafka_\* | head -1 | grep -o '\kafka[^\n]*'
