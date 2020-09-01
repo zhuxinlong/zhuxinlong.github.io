@@ -6,7 +6,7 @@ description:  kafka协议指南
 keywords: kafka protocol
 # topmost: true
 ---
-## 介绍
+
 本文档涵盖了Kafka 0.8及更高版本中实现的协议。它的目的是提供一个可读的协议指南，包括可用的请求以及它们的二进制格式，以及使用它们实现client的正确方法。本文档假设您理解这里描述的基本设计和术语。
 
 ## 概述
