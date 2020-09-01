@@ -131,6 +131,7 @@ BNF故意不紧凑，以便提供人类可读的名称(例如，我为ErrorCode�
 RequestOrResponse => Size (RequestMessage | ResponseMessage)
   Size => int32
 ```
+
 Field|Description
 ---------|----------
 MessageSize|  MessageSize字段以字节为单位给出后续请求或响应消息的大小。客户机可以读取请求，首先将这个4字节大小读取为整数N，然后读取和解析请求的后续N字节
